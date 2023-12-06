@@ -6,12 +6,12 @@ import { ErrorComponent } from './views/error/error.component';
 const routes: Routes = [
   {
     path: '', component:InscriptionLayoutComponent,children:[
-      
+      { path:'', loadChildren: () => import('./views/landing/landing.module').then(m => m.LandingModule) },
+
     ]
   },
   { path: 'erreur', component: ErrorComponent },
-  { path: '**', redirectTo: '/erreur' } // Redirect all unknown routes to the error page
-
+  { path: '**', redirectTo: '/erreur' }, // Redirect all unknown routes to the error page
 
 ];
 
