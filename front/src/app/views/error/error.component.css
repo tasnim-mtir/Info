@@ -1,0 +1,296 @@
+
+#background-video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1000; /* Behind everything */
+    background-size: cover;
+}
+/* Styles for circular button with 3D effect */
+.circular-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #215b23;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  
+    /* Add 3D effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition for the transform property */
+  }
+  
+  .circular-button:hover {
+    background-color: #74c579;
+    transform: scale(1.1); /* Increase scale on hover for a 3D effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2); /* Adjust shadow values on hover */
+  }
+  .circular-button2 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #6a1a1a;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  
+    /* Add 3D effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition for the transform property */
+  }
+  
+  .circular-button2:hover {
+    background-color: rgb(158, 71, 71);
+    transform: scale(1.1); /* Increase scale on hover for a 3D effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .circular-button3 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(154, 165, 7) ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  
+    /* Add 3D effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition for the transform property */
+  }
+  
+  .circular-button3:hover {
+    background-color: rgb(231, 217, 13);
+    transform: scale(1.1); /* Increase scale on hover for a 3D effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .circular-button4 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(7, 165, 165) ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  
+    /* Add 3D effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition for the transform property */
+  }
+  
+  .circular-button4:hover {
+    background-color: rgb(13, 231, 184);
+    transform: scale(1.1); /* Increase scale on hover for a 3D effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  .keyboard {
+    border-collapse: collapse;
+  }
+  
+  .keyboard-button {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    font-size: 18px;
+  }
+  
+  .keyboard-button i {
+    margin: 5px;
+  }
+  
+  .keyboard-button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Visually hidden class */
+  .visually-hidden {
+    position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+  }
+  
+  .circular-button6 {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(7, 165, 165) ;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-size: 10px;
+  
+    /* Add 3D effect */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Adjust shadow values as needed */
+    transition: transform 0.2s ease-in-out; /* Add smooth transition for the transform property */
+  }
+  
+  .circular-button6:hover {
+    background-color: rgb(13, 231, 184);
+    transform: scale(1.1); /* Increase scale on hover for a 3D effect */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+  }
+.garden {
+    border: 3px solid green;
+    background-color: #e4f0d0; /* light green background */
+    padding: 10px;
+    border-radius: 10px; /* rounded corners */
+    width: 300px; /* adjust as needed */
+    height: 200px; /* adjust as needed */
+    overflow-y: auto; /* allows scrolling if many trees are added */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree-container img {
+    width: 50px; /* adjust as needed */
+    height: 50px; /* adjust as needed */
+    margin: 5px;
+}
+
+.start-message {
+    /* Existing styling */
+    font-size: 4em;
+    text-align: center;
+    color: rgb(11, 1, 1);
+    position: absolute;
+    top: 44%;
+    left: 28%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    position: absolute;
+    animation: shakeAnimation 0.5s ease-in-out infinite;
+    filter: drop-shadow(5px 5px 5px rgb(65, 173, 40)); /* White shadow for subtle glow */
+
+    /* New highlight */
+    border: 3px solid rgb(2, 0, 0); /* Red border */
+}
+  @keyframes shakeAnimation {
+    0% {
+      transform: translateY(-5px);
+    }
+    50% {
+      transform: translateY(5px);
+    }
+    100% {
+      transform: translateY(-5px);
+    }
+}
+
+
+.background {
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+
+/* Ensure your content is above the video */
+.content {
+    position: relative;
+    z-index: 1;
+    /* Rest of your styling */
+}
+.tree-container {
+
+    /* Your styling here */
+  }
+  
+  .tree-container img {
+    width: 30px; /* Example size */
+    height: auto;
+    margin: 2px;
+    /* Additional styling */
+  }
+  
+/* Centering the container */
+
+.container {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+}
+
+/* Styling the Tetris container */
+.tetris-container {
+    background-color: #f2ebeb6f;
+    border: 2px solid #070707;
+    padding: 20px; /* Adjust padding for spacing */
+}
+
+/* Styling the control buttons */
+.controls {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px; /* Adjust spacing between Tetris game and buttons */
+}
+
+.controls button {
+    margin-bottom: 10px; /* Adjust button spacing */
+    /* Add more styling as needed */
+}
+
+:host {
+    display: inline-block;
+    width: auto;
+    text-align: center;
+}
+
+:host button.bw {
+    color: black;
+    background: white;
+    border: 2px solid black;
+}
+
+:host button.colors {
+    color: black;
+    background: yellow;
+    border: 2px solid red;
+}
+
+:host button.colors span {
+    font-weight: bold;
+    background: white;
+    color: black;
+    padding: 0 2px;
+}
+
+:host button.colors span.green {
+    background: green;
+    color: white;
+}
+
+:host button.colors span.red {
+    background: red;
+}
+
+.controls {
+    float: right;
+}
+
+tetris-core {
+    display: inline-block;
+}
+
+
