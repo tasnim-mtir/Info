@@ -7,6 +7,8 @@ const routes: Routes = [
   {
     path: '', component:InscriptionLayoutComponent,children:[
       { path:'', loadChildren: () => import('./views/landing/landing.module').then(m => m.LandingModule) },
+      { path:'singup', loadChildren: () => import('./views/singup/singup.module').then(m => m.SingupModule) },
+      { path:'login', loadChildren: () => import('./views/login/login.module').then(m => m.LoginModule) },
 
     ]
   },
